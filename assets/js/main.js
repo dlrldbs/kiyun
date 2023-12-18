@@ -170,206 +170,206 @@ ScrollTrigger.batch("[data-scroll-opacityX]", {
     },
 });
 
-$(document).ready(function() {
-    $('.btn-mode').click(function() {
-        const body = $('body');
-        const btnMode = $('.btn-mode');
-        const logo = $('.sc-visual .logo a img')
-        const toggleButton = $('.toggle-button');
-        const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
-        const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
-        const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
-        const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
-        const caption = $('.sc-visual .group-theme .caption .captiontxt');
+// $(document).ready(function() {
+//     $('.btn-mode').click(function() {
+//         const body = $('body');
+//         const btnMode = $('.btn-mode');
+//         const logo = $('.sc-visual .logo a img')
+//         const toggleButton = $('.toggle-button');
+//         const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
+//         const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
+//         const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
+//         const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
+//         const caption = $('.sc-visual .group-theme .caption .captiontxt');
         
-        if (body.attr('data-theme') === 'dark') {
-            if ($(window).width() <= 320) {
-                toggleButton.css('transform', 'translate(120px, 7px)');
-                btnMode.css('background','none');
-            } else{
-                toggleButton.css('transform', 'translate(8px, 7px)');
-                btnMode.css('background','#020202');
-            }
-            body.removeAttr('data-theme');
-            toggleButton.css('background', '#4f4d4d');
-            logo.css('filter','invert(0)');
-            textDark.css('opacity','1');
-            textDark.css('transform','translate(-55%, 0)');
-            textLight.css('opacity','0');
-            textLight.css('transform','translate(25%, 0)');
-            iconDark.css('opacity','1');
-            iconLight.css('opacity','0');
-            caption.css('transform','translateY(0)');
-        } else {
-            body.attr('data-theme', 'dark');
-            if ($(window).width() <= 320) {
-                toggleButton.css('transform', 'translate(120px, 7px)');
-                btnMode.css('background','none');
-            } else if ($(window).width() <= 768) {
-                toggleButton.css('transform', 'translate(265%, 7px)');
-                caption.css('transform','translateY(-170%)');
-                btnMode.css('background','#b188ff');
-            } else {
-                toggleButton.css('transform', 'translate(300%, 7px)');
-                caption.css('transform','translateY(-105%)');
-                btnMode.css('background','#b188ff');
-            }
-            toggleButton.css('background', '#fff');
-            logo.css('filter','invert(1)');
-            textDark.css('opacity','0');
-            textDark.css('transform','translate(-70%, 0)');
-            textLight.css('opacity','1');
-            textLight.css('transform','translate(10%, 0)');
-            iconDark.css('opacity','0');
-            iconLight.css('opacity','1');
-        }
-    });
-});
-// ScrollTrigger.matchMedia({
-//     // large
-//     "(min-width: 1025px)": function() {
-//     $(document).ready(function() {
-//         $('.btn-mode').click(function() {
-//             const body = $('body');
-//             const btnMode = $('.btn-mode');
-//             const logo = $('.sc-visual .logo a img')
-//             const toggleButton = $('.toggle-button');
-//             const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
-//             const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
-//             const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
-//             const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
-//             const caption = $('.sc-visual .group-theme .caption .captiontxt');
-            
-//             if (body.attr('data-theme') === 'dark') {
-//                 if ($(window).width() <= 320) {
-//                     toggleButton.css('transform', 'translate(120px, 7px)');
-//                     btnMode.css('background','none');
-//                 } else{
-//                     toggleButton.css('transform', 'translate(8px, 7px)');
-//                     btnMode.css('background','#020202');
-//                 }
-//                 body.removeAttr('data-theme');
-//                 toggleButton.css('background', '#4f4d4d');
-//                 logo.css('filter','invert(0)');
-//                 textDark.css('opacity','1');
-//                 textDark.css('transform','translate(-55%, 0)');
-//                 textLight.css('opacity','0');
-//                 textLight.css('transform','translate(25%, 0)');
-//                 iconDark.css('opacity','1');
-//                 iconLight.css('opacity','0');
-//                 caption.css('transform','translateY(0)');
-//             } else {
-//                 body.attr('data-theme', 'dark');
-//                 if ($(window).width() <= 320) {
-//                     toggleButton.css('transform', 'translate(120px, 7px)');
-//                     btnMode.css('background','none');
-//                 } else if ($(window).width() <= 768) {
-//                     toggleButton.css('transform', 'translate(265%, 7px)');
-//                     caption.css('transform','translateY(-170%)');
-//                     btnMode.css('background','#b188ff');
-//                 } else {
-//                     toggleButton.css('transform', 'translate(300%, 7px)');
-//                     caption.css('transform','translateY(-105%)');
-//                     btnMode.css('background','#b188ff');
-//                 }
-//                 toggleButton.css('background', '#fff');
-//                 logo.css('filter','invert(1)');
-//                 textDark.css('opacity','0');
-//                 textDark.css('transform','translate(-70%, 0)');
-//                 textLight.css('opacity','1');
-//                 textLight.css('transform','translate(10%, 0)');
-//                 iconDark.css('opacity','0');
-//                 iconLight.css('opacity','1');
+//         if (body.attr('data-theme') === 'dark') {
+//             if ($(window).width() <= 320) {
+//                 toggleButton.css('transform', 'translate(120px, 7px)');
+//                 btnMode.css('background','none');
+//             } else{
+//                 toggleButton.css('transform', 'translate(8px, 7px)');
+//                 btnMode.css('background','#020202');
 //             }
-//         });
-//     });
-// },
-// // medium
-// "(min-width: 768px) and (max-width: 1024px)": function() {
-//     $(document).ready(function() {
-//         $('.btn-mode').click(function() {
-//             const body = $('body');
-//             const btnMode = $('.btn-mode');
-//             const logo = $('.sc-visual .logo a img')
-//             const toggleButton = $('.toggle-button');
-//             const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
-//             const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
-//             const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
-//             const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
-//             const caption = $('.sc-visual .group-theme .caption .captiontxt');
-            
-//             if (body.attr('data-theme') === 'dark') {
-//                  toggleButton.css('transform', 'translate(8px, 7px)');
-//                  btnMode.css('background','#020202');
-//                 body.removeAttr('data-theme');
-//                 toggleButton.css('background', '#4f4d4d');
-//                 logo.css('filter','invert(0)');
-//                 textDark.css('opacity','1');
-//                 textDark.css('transform','translate(-55%, 0)');
-//                 textLight.css('opacity','0');
-//                 textLight.css('transform','translate(25%, 0)');
-//                 iconDark.css('opacity','1');
-//                 iconLight.css('opacity','0');
-//                 caption.css('transform','translateY(0)');
-//             } else {
-//                 body.attr('data-theme', 'dark');
+//             body.removeAttr('data-theme');
+//             toggleButton.css('background', '#4f4d4d');
+//             logo.css('filter','invert(0)');
+//             textDark.css('opacity','1');
+//             textDark.css('transform','translate(-55%, 0)');
+//             textLight.css('opacity','0');
+//             textLight.css('transform','translate(25%, 0)');
+//             iconDark.css('opacity','1');
+//             iconLight.css('opacity','0');
+//             caption.css('transform','translateY(0)');
+//         } else {
+//             body.attr('data-theme', 'dark');
+//             if ($(window).width() <= 320) {
+//                 toggleButton.css('transform', 'translate(120px, 7px)');
+//                 btnMode.css('background','none');
+//             } else if ($(window).width() <= 768) {
 //                 toggleButton.css('transform', 'translate(265%, 7px)');
 //                 caption.css('transform','translateY(-170%)');
 //                 btnMode.css('background','#b188ff');
-//                 toggleButton.css('background', '#fff');
-//                 logo.css('filter','invert(1)');
-//                 textDark.css('opacity','0');
-//                 textDark.css('transform','translate(-70%, 0)');
-//                 textLight.css('opacity','1');
-//                 textLight.css('transform','translate(10%, 0)');
-//                 iconDark.css('opacity','0');
-//                 iconLight.css('opacity','1');
-//             }
-//         });
-//     });
-// },
-
-// // small
-// "(max-width: 767px)": function() {
-//     $(document).ready(function() {
-//         $('.btn-mode').click(function() {
-//             const body = $('body');
-//             const btnMode = $('.btn-mode');
-//             const logo = $('.sc-visual .logo a img')
-//             const toggleButton = $('.toggle-button');
-//             const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
-//             const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
-//             const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
-//             const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
-//             const caption = $('.sc-visual .group-theme .caption .captiontxt');
-            
-//             if (body.attr('data-theme') === 'dark') {
-//                 toggleButton.css('transform', 'translate(120px, 7px)');
-//                 btnMode.css('background','none');
-//                 body.removeAttr('data-theme');
-//                 toggleButton.css('background', '#4f4d4d');
-//                 logo.css('filter','invert(0)');
-//                 textDark.css('opacity','1');
-//                 textDark.css('transform','translate(-55%, 0)');
-//                 textLight.css('opacity','0');
-//                 textLight.css('transform','translate(25%, 0)');
-//                 iconDark.css('opacity','1');
-//                 iconLight.css('opacity','0');
-//                 caption.css('transform','translateY(0)');
 //             } else {
-//                 body.attr('data-theme', 'dark');
-//                 toggleButton.css('transform', 'translate(120px, 7px)');
-//                 btnMode.css('background','none');
-//                 toggleButton.css('background', '#fff');
-//                 logo.css('filter','invert(1)');
-//                 textDark.css('opacity','0');
-//                 textDark.css('transform','translate(-70%, 0)');
-//                 textLight.css('opacity','1');
-//                 textLight.css('transform','translate(10%, 0)');
-//                 iconDark.css('opacity','0');
-//                 iconLight.css('opacity','1');
+//                 toggleButton.css('transform', 'translate(300%, 7px)');
+//                 caption.css('transform','translateY(-105%)');
+//                 btnMode.css('background','#b188ff');
 //             }
-//         });
+//             toggleButton.css('background', '#fff');
+//             logo.css('filter','invert(1)');
+//             textDark.css('opacity','0');
+//             textDark.css('transform','translate(-70%, 0)');
+//             textLight.css('opacity','1');
+//             textLight.css('transform','translate(10%, 0)');
+//             iconDark.css('opacity','0');
+//             iconLight.css('opacity','1');
+//         }
 //     });
-// }
 // });
+ScrollTrigger.matchMedia({
+    // large
+    "(min-width: 1025px)": function() {
+    $(document).ready(function() {
+        $('.btn-mode').click(function() {
+            const body = $('body');
+            const btnMode = $('.btn-mode');
+            const logo = $('.sc-visual .logo a img')
+            const toggleButton = $('.toggle-button');
+            const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
+            const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
+            const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
+            const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
+            const caption = $('.sc-visual .group-theme .caption .captiontxt');
+            
+            if (body.attr('data-theme') === 'dark') {
+                if ($(window).width() <= 320) {
+                    toggleButton.css('transform', 'translate(120px, 7px)');
+                    btnMode.css('background','none');
+                } else{
+                    toggleButton.css('transform', 'translate(8px, 7px)');
+                    btnMode.css('background','#020202');
+                }
+                body.removeAttr('data-theme');
+                toggleButton.css('background', '#4f4d4d');
+                logo.css('filter','invert(0)');
+                textDark.css('opacity','1');
+                textDark.css('transform','translate(-55%, 0)');
+                textLight.css('opacity','0');
+                textLight.css('transform','translate(25%, 0)');
+                iconDark.css('opacity','1');
+                iconLight.css('opacity','0');
+                caption.css('transform','translateY(0)');
+            } else {
+                body.attr('data-theme', 'dark');
+                if ($(window).width() <= 320) {
+                    toggleButton.css('transform', 'translate(120px, 7px)');
+                    btnMode.css('background','none');
+                } else if ($(window).width() <= 768) {
+                    toggleButton.css('transform', 'translate(265%, 7px)');
+                    caption.css('transform','translateY(-170%)');
+                    btnMode.css('background','#b188ff');
+                } else {
+                    toggleButton.css('transform', 'translate(300%, 7px)');
+                    caption.css('transform','translateY(-105%)');
+                    btnMode.css('background','#b188ff');
+                }
+                toggleButton.css('background', '#fff');
+                logo.css('filter','invert(1)');
+                textDark.css('opacity','0');
+                textDark.css('transform','translate(-70%, 0)');
+                textLight.css('opacity','1');
+                textLight.css('transform','translate(10%, 0)');
+                iconDark.css('opacity','0');
+                iconLight.css('opacity','1');
+            }
+        });
+    });
+},
+// medium
+"(min-width: 768px) and (max-width: 1024px)": function() {
+    $(document).ready(function() {
+        $('.btn-mode').click(function() {
+            const body = $('body');
+            const btnMode = $('.btn-mode');
+            const logo = $('.sc-visual .logo a img')
+            const toggleButton = $('.toggle-button');
+            const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
+            const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
+            const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
+            const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
+            const caption = $('.sc-visual .group-theme .caption .captiontxt');
+            
+            if (body.attr('data-theme') === 'dark') {
+                 toggleButton.css('transform', 'translate(8px, 7px)');
+                 btnMode.css('background','#020202');
+                body.removeAttr('data-theme');
+                toggleButton.css('background', '#4f4d4d');
+                logo.css('filter','invert(0)');
+                textDark.css('opacity','1');
+                textDark.css('transform','translate(-55%, 0)');
+                textLight.css('opacity','0');
+                textLight.css('transform','translate(25%, 0)');
+                iconDark.css('opacity','1');
+                iconLight.css('opacity','0');
+                caption.css('transform','translateY(0)');
+            } else {
+                body.attr('data-theme', 'dark');
+                toggleButton.css('transform', 'translate(265%, 7px)');
+                caption.css('transform','translateY(-170%)');
+                btnMode.css('background','#b188ff');
+                toggleButton.css('background', '#fff');
+                logo.css('filter','invert(1)');
+                textDark.css('opacity','0');
+                textDark.css('transform','translate(-70%, 0)');
+                textLight.css('opacity','1');
+                textLight.css('transform','translate(10%, 0)');
+                iconDark.css('opacity','0');
+                iconLight.css('opacity','1');
+            }
+        });
+    });
+},
+
+// small
+"(max-width: 767px)": function() {
+    $(document).ready(function() {
+        $('.btn-mode').click(function() {
+            const body = $('body');
+            const btnMode = $('.btn-mode');
+            const logo = $('.sc-visual .logo a img')
+            const toggleButton = $('.toggle-button');
+            const textDark = $('.sc-visual .group-theme .btn-mode .text .DarkMode');
+            const textLight = $('.sc-visual .group-theme .btn-mode .text .LightMode');
+            const iconDark = $('.sc-visual .group-theme .btn-mode .toggle-button img.dark');
+            const iconLight = $('.sc-visual .group-theme .btn-mode .toggle-button img.light');
+            const caption = $('.sc-visual .group-theme .caption .captiontxt');
+            
+            if (body.attr('data-theme') === 'dark') {
+                toggleButton.css('transform', 'translate(120px, 7px)');
+                btnMode.css('background','none');
+                body.removeAttr('data-theme');
+                toggleButton.css('background', '#4f4d4d');
+                logo.css('filter','invert(0)');
+                textDark.css('opacity','1');
+                textDark.css('transform','translate(-55%, 0)');
+                textLight.css('opacity','0');
+                textLight.css('transform','translate(25%, 0)');
+                iconDark.css('opacity','1');
+                iconLight.css('opacity','0');
+                caption.css('transform','translateY(0)');
+            } else {
+                body.attr('data-theme', 'dark');
+                toggleButton.css('transform', 'translate(120px, 7px)');
+                btnMode.css('background','none');
+                toggleButton.css('background', '#fff');
+                logo.css('filter','invert(1)');
+                textDark.css('opacity','0');
+                textDark.css('transform','translate(-70%, 0)');
+                textLight.css('opacity','1');
+                textLight.css('transform','translate(10%, 0)');
+                iconDark.css('opacity','0');
+                iconLight.css('opacity','1');
+            }
+        });
+    });
+}
+});
